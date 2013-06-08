@@ -1,6 +1,5 @@
 html {
 		font-size: 125%;
-		/*min-width: 1150px; /*Resize stops at 1115 because we don't wan the navigation list to become two rows and this is before it becomes two rows*/
 		}
 
 * {
@@ -44,7 +43,7 @@ h2{
 }
 
 h3{
-	font-size: 12px;
+	font-size: 15px;
 	text-align: left;
 	font-weight: bold;
 	font-family: verdana, san-serif;
@@ -73,20 +72,14 @@ ul #nav {
 }
 
 .page{
-	max-width: 950px;
+	max-width: 480px;
 	height: auto;
-	width: 950px;
+	width: 480px;
 	position: relative;
 	margin-right:auto;
 	margin-left: auto;
 	padding-right: 0px;
-	/*border:1px solid red;/*Grid visualization guide. Remove when publish*/
-
-}
-
-.page .gu6{
-	display: block;
-	/*border:1px solid orange;*/
+	/*border:1px solid black;/*Grid visualization guide. Remove when publish*/
 }
 
 .row {
@@ -113,28 +106,26 @@ ul #nav {
 }
 
 .pg-header {
-	width: 950px;
-	margin-left: -0.5px;
-	/*border:2px solid blue;/*Grid visualization guide. Remove when publish*/
-	border-bottom: 5px solid white;
+	width: 480px;
+	border-bottom: 5px solid white;/*Grid visualization guide. Remove when publish*/
 
 }
 
 .pg-content .gu6{
-	width:950px;
-	margin-left: 20px;
-	padding-left: 0px;
+	width:480px;
+	height:62px;
+	background-color: #e5e5e5;
 
 }
 
 
 .pg-content .gu6 .content ul{
-	bottom: 0px;
+	padding-bottom: 0px;
 	position:absolute;
-	right: 10%;
+	bottom:0px;
+
 	font-size:20px;
 	color:white;
-	margin-left: 10px;
 	/*Allows that padding to render in similar way on all browsers.*/
 	-moz-padding-start:0;
 	-webkit-padding-start:0;
@@ -147,27 +138,33 @@ ul #nav {
 }
 
 .gu1{
-	width:150px;
-	padding-left: 10%;
-	padding-right: 0px;
+	width:50%;
+	margin-left: 15%;
 	padding-bottom: 5px;
 	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
 }
 
 .gu1_25{
-	width:208px;
+	width:140px;
 	padding-left: 0px;
 	/*border:1px solid green;/*Grid visualization guide. Remove when publish*/
 }
 
-
 .gu1_75{
-	width:270px;
-	height: 10em;
+	width:200px;
 	padding-top: 3.5%;
+	padding-left: 30px;
+	padding-right: 1%;
+	/*border:1px solid green;/*Grid visualization guide. Remove when publish*/
+}
+
+
+.gu2{
+	width:20%;
+	height: 10em;
 	padding-left: 3%;
 	padding-right: 1%;
-	/*border: 1px solid red;/*Grid visualization guide. Remove when publish*/
+	padding-top: 2.5%;
 	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
 }
 
@@ -175,33 +172,37 @@ ul #nav {
 .gu2_75{
 	padding-bottom: 0px;
 	width:430px;
-	height:89px;
-	/*border: 1px solid red;/*Grid visualization guide. Remove when publish*/
+	height:80px;
 	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
 	position:relative;
 }
 
 .gu3_25{
-	width:475px;
-	height:89px;
-	/*border: 1px solid red;/*Grid visualization guide. Remove when publish*/
+	width:430px;
+	height:35px;
 	/*border:1px solid blue; /*Grid visualization guide. Remove when publish*/
 	position:relative;
-	float:right;
+	float:left;
 }
 
 .gu4{
-	width: 630px;
+	width: 40%;
 	padding-top: 10px;
-	padding-right: 0px;
 	padding-left: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
 	text-align: center;
 	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
 	
 }
 
+.gu5{
+	width: 480px;
+	margin-left:0;
+
+}
+
+.gu6{
+	/*width: 99.3%;*/
+}
 
 
 a{
@@ -216,7 +217,7 @@ a:active, a:hover{
 .gu3_25 .content .top_nav {
 	position:absolute;
 	bottom:0px;
-	right: 20px;
+	left:0px;
 	font-size:20px;
 	color:white;
 	/*Allows that padding to render in similar way on all browsers.*/
@@ -230,9 +231,9 @@ a:active, a:hover{
 }
 
 
-.gu1_75 .content ul li {
+.gu2 .content ul li {
 	display: block;
-	font-size:20px;
+	font-size:25px;
 	color:white;
 	text-align: right;
 	margin-bottom:1em; 
@@ -242,12 +243,11 @@ a:active, a:hover{
 
 #HomeImage{
 	width: 100%;
-	
 }
 
 
 #navbar{
-	width: 100%;
-	height:29px;
+	width:101.5%;
+	height:43px;
 }
 
