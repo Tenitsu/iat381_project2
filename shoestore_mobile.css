@@ -51,6 +51,13 @@ h3{
 	color: white;
 }
 
+h4{
+	font-size: 12px;
+	margin-left: 10px;
+	font-family: verdana, san-serif;
+	text-align: left;
+	color: white;
+}
 
 p {
 	font-size: 12px;
@@ -188,7 +195,16 @@ ul #nav {
 .gu4{
 	width: 40%;
 	padding-top: 10px;
-	padding-left: 0px;
+	padding-left: 20px;
+	text-align: center;
+	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
+	
+}
+
+.gu4_5{
+	width: 70%;
+	padding-top: 10px;
+	padding-left: 20px;
 	text-align: center;
 	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
 	
@@ -251,3 +267,84 @@ a:active, a:hover{
 	height:43px;
 }
 
+form fieldset{
+	margin-bottom: 20px;
+}
+
+form#ShoeSize {
+	border:none;
+	font-size: 12px;
+	color: white;
+	display: block;
+	font: Georgia, Times,serif;
+}
+
+form#ShoeSize legend{
+	font-family: verdana, san-serif;
+	color: white;
+	text-align: left;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+form#ShoeSize ul{
+	list-style: none;
+	text-align: left;
+	padding-left: 0px;
+}
+
+form#Shipping {
+	border:none;
+	list-style: none;
+	font: Georgia, Times,serif;
+	margin: auto;
+	padding: 28px 25px;
+	font-size: 12px;
+	text-align: left;
+}
+
+
+form#Shipping legend{
+	border:none;
+	font-weight: bold;
+	font-family: verdana, san-serif;
+	color: white;
+	font-size: 15px;
+}
+
+form#Shipping label{
+	font-family: verdana, san-serif;
+	color: white;
+	font-size: 13px;
+}
+
+form#Shipping ol{
+	list-style: none;
+	text-align: left;
+}
+
+.HomeImage{
+	position:relative;
+	vertical-align: bottom;
+	width: 590px;
+}
+
+.FAQ{
+	width: 100%;
+}
+form#Shipping button{
+	background: url('buttons/button_bk.png');
+	border:none;
+	color: #FFFFFF;
+	display: block;
+	font: Georgia, Times,serif;
+	margin: auto;
+	padding: 7px 25px;
+	text-transform: uppercase;
+}
+
+form#Shipping button:hover {
+	background:url('buttons/button_bk_hover.png')
+	center;
+	cursor: pointer;
+}
