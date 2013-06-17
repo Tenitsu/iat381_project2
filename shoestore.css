@@ -339,3 +339,25 @@ form#Shipping ol{
 	width: 100%;
 }
 
+.gu1_75 .payment ol li {
+	margin-left:0;
+	-moz-padding-start:0;
+	-webkit-padding-start:0;
+}
+
+.content_button .gu4 {
+	padding-top: 100px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-left: 15px;
+
+}
+
+.content_button .gu2 {
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-left: 40px;
+	margin-left: 15px;
+
+}
+
