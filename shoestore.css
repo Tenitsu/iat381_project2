@@ -346,18 +346,73 @@ form#Shipping ol{
 }
 
 .content_button .gu4 {
-	padding-top: 100px;
+	padding-top: 80px;
 	padding-right: 0px;
 	padding-left: 0px;
 	margin-left: 15px;
 
 }
 
+/* button for purchase */
 .content_button .gu2 {
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-right: 0px;
 	padding-left: 40px;
 	margin-left: 15px;
 
 }
 
+label{
+	float: left;
+	font-size:10px;
+	padding-top:10px;
+	padding-bottom:0px;
+	margin:2px;
+
+}
+
+legend {
+	font-size: 12px;
+	font-weight: bold 
+}
+
+/*puchase details */
+#payment {
+	float:left;
+
+}
+
+/* for fieldset's padding */
+.gu4 .gu1 {
+	padding-bottom: 18px;
+
+}
+
+
+.gu1 .creditcard .gu_5{
+    margin:0px;
+}
+
+.gu3_mastercard {
+    padding:10px;
+}
+
+.gu3_amex {
+    padding:10px;
+    padding-left: 42px;
+}
+
+.gu3_visa {
+    padding:10px;
+    padding-left: 45px;
+}
+
+/*button for purchase */
+a{
+	color:#333333;
+}
+
+a:active, a:hover{
+	color:#333333;
+	text-decoration: none;
+}
