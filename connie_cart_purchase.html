@@ -104,60 +104,100 @@
 
 	</div> <!--closs col gu4 -->
 
-		<div class= "col gu1 details">
+		<div class= "col gu4 filldetails">
 
 		<form id="payment"> <!--form tag-->
 
 
 			<fieldset> 
 
-				<legend>Your details</legend> <!-- what is this -->
+				<legend>Your details</legend> 
 
-				<ol><!--unordered list --> 
-					<li><!-- with 3 list items -->
+
+					<div class= "gu1"> <!--set where the fill box is -->
+
+
 						<label for="name">Name</label> <!--added attributte for label and will keep things organized --> <!-- label for= is more specific for label class= -->
 						<input id="name" name=name type=text placeholder="First and last name" required autofocus /><!--input tag --> <!-- will look for names --> <!--required and autofocus are two seperate things, required means the page wont load until the field is filled, autofocus.... did not catch that...-->
-					</li>
-					
-					<li>
+
 						<label for="email">Email</label>
 						<input id="email" name="email" type="email" placeholder="example@domain.com" required /> <!-- will look for the @ and _ -->
-					</li>
-					
-					<li>
+
+
 						<label for="phone">Phone</label>
 						<input id="phone" name="phone" type="tel" placeholder="eg: 604-333-3333" required /> <!-- phone -->
-					</li>
-				</ol>
-					
+
+
+					</div> <!--closes where the fill in box for Your Details -->
+
+
 			</fieldset>
+
 			
 			<fieldset>
+
 				<legend>Delivery address</legend>
-				<ol><!--ordered list-->
+
+
+
+					<div class= "gu1"> <!--set where the fill box is -->
+
 					<label for="address">Address</label>
 					<textarea id="address" name="address" rows=5 required ></textarea> <!-- the text area can be resized on the page -->
-				</ol>
+
+					<label for="address">City</label>
+					<input id="address" name="address" />
+
+					<label for="address">Postal Code</label>
+					<input id="address" name="address" />
+
+					</div> <!--closes fill box gu1 -->
+
 			</fieldset>
 			
 			<fieldset>
 				<legend>Card details</legend>
-				<ol>
-					<li> <!--has to be inside list item -->
-					    <input id="visa" name="cardtype" type="radio" />
-					    <label for="visa">VISA</label>
-					</li>
-					
-					<li> <!--has to be inside list item -->
-					    <input id="amex" name="cardtype" type="radio" />
-					    <label for="amex">AMEX</label>
-					</li>
-					
-					<li> <!--has to be inside list item -->
-					    <input id="mastercard" name="cardtype" type="radio" />
-					    <label for="mastercard">Mastercard</label>
-					</li>
-				</ol>
+
+					<div class= "gu1"> <!--set where the fill box is -->
+
+					<label for="cardnumber">Card Number</label>
+					<input id="cardnumber" name="cardnumber" />
+
+					<div class="creditcard"> <!--for creditcard choices -->
+						
+						<div class="row gu_5">	<!--more specific row -->
+
+						<label for="visa">VISA</label>
+						<div class= "col gu3_visa">
+						<input id="visa" name="cardtype" type="radio" />
+						</div> <!--closes for col gu3_visa -->
+
+						</div> <!--closes row gu_5 -->
+
+						
+						<div class="row gu_5">	
+
+						<label for="amex">AMEX</label>
+						<div class= "col gu3_amex">
+						<input id="amex" name="cardtype" type="radio" />
+						</div> <!--closes for col gu3_amex -->
+
+						</div> <!--closes row gu_5 -->
+						
+
+						<div class="row gu_5">	
+
+						<label for="mastercard">Mastercard</label>
+						<div class= "col gu3_mastercard">
+						<input id="mastercard" name="cardtype" type="radio" />
+						</div> <!--closes for col gu3_mastercard -->
+
+						</div><!--closes row gu_5 -->
+
+					</div><!--closes creditcard choices -->
+
+				</div> <!--closes fill box gu1 -->
+
 			</fieldset>
 
 			<fieldset>
