@@ -353,12 +353,11 @@ form#Shipping ol{
 
 }
 
-/* button for purchase */
-.content_button .gu2 {
-	padding-top: 20px;
-	padding-right: 0px;
-	padding-left: 40px;
-	margin-left: 15px;
+/* button for proceed to purchase */
+.proceedButton {
+	border:1px solid blue;
+	float: right;
+	padding: 5px;
 
 }
 
