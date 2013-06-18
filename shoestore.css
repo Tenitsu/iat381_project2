@@ -407,12 +407,5 @@ legend {
     padding-left: 45px;
 }
 
-/*button for purchase */
-a{
-	color:#333333;
-}
-
-a:active, a:hover{
-	color:#333333;
 	text-decoration: none;
 }
