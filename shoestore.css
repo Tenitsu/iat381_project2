@@ -230,6 +230,18 @@ ul #nav {
 	text-align: center;
 }
 
+.gu5_9{
+	width:950px;
+	height:62px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+.gu5_9 .Complete{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 
 a{
 	text-decoration: none;
@@ -389,22 +401,27 @@ legend {
 
 
 .gu1 .creditcard .gu_5{
-    margin:0px;
+   	 margin:0px;
 }
 
 .gu3_mastercard {
-    padding:10px;
+    	padding:10px;
 }
 
 .gu3_amex {
-    padding:10px;
-    padding-left: 42px;
+    	padding:10px;
+   	 padding-left: 42px;
 }
 
 .gu3_visa {
-    padding:10px;
-    padding-left: 45px;
+   	padding:10px;
+    	padding-left: 45px;
 }
 
-	text-decoration: none;
+.About{
+    	position:relative;
+    	vertical-align: bottom;
+    	width: 100%;
 }
+
+
