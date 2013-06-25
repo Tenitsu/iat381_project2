@@ -1,5 +1,6 @@
 html {
 		font-size: 125%;
+		/*min-width: 1150px; /*Resize stops at 1115 because we don't wan the navigation list to become two rows and this is before it becomes two rows*/
 		}
 
 * {
@@ -43,7 +44,7 @@ h2{
 }
 
 h3{
-	font-size: 15px;
+	font-size: 12px;
 	text-align: left;
 	font-weight: bold;
 	font-family: verdana, san-serif;
@@ -79,14 +80,20 @@ ul #nav {
 }
 
 .page{
-	max-width: 480px;
+	max-width: 768px;
 	height: auto;
-	width: 460px;
+	width: 768px;
 	position: relative;
 	margin-right:auto;
 	margin-left: auto;
 	padding-right: 0px;
-	/*border:1px solid black;/*Grid visualization guide. Remove when publish*/
+	/*border:1px solid red;/*Grid visualization guide. Remove when publish*/
+
+}
+
+.page .gu6{
+	display: block;
+	/*border:1px solid orange;*/
 }
 
 .row {
@@ -113,37 +120,30 @@ ul #nav {
 }
 
 .pg-header {
-	width: 490px;
-	border-bottom: 5px solid white;/*Grid visualization guide. Remove when publish*/
+	width: 768px;
+	margin-left: -0.5px;
+	/*border:2px solid blue;/*Grid visualization guide. Remove when publish*/
+	border-bottom: 5px solid white;
 
 }
 
 .pg-content .gu6{
-	width:490px;
-	height:62px;
+	width:768px;
+	height: 60px;
 	background-color: #e5e5e5;
+	margin-left: 20px;
 	padding-left: 0px;
-	margin-left: 0px;
 
 }
 
-
-.pg-image .gu6{
-	width: 480px;
-	padding-left: 10px;
-
-}
-
-#HomeImage{
-	width: 100%;
-}
 
 .pg-content .gu6 .content ul{
-	padding-bottom: 0px;
+	bottom: 0px;
 	position:absolute;
-	bottom:0px;
+	right: 10%;
 	font-size:20px;
 	color:white;
+	margin-left: 10px;
 	/*Allows that padding to render in similar way on all browsers.*/
 	-moz-padding-start:0;
 	-webkit-padding-start:0;
@@ -156,24 +156,26 @@ ul #nav {
 }
 
 .gu1{
-	width:50%;
-	margin-left: 15%;
+	width:150px;
+	padding-left: 10%;
+	padding-right: 0px;
 	padding-bottom: 5px;
 	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
 }
 
 .gu1_25{
-	width:140px;
+	width:208px;
 	padding-left: 0px;
 	/*border:1px solid green;/*Grid visualization guide. Remove when publish*/
 }
 
 .gu1_35{
-	width: 180px;
-	padding-top: 5%;
-	margin-left: 0px;
+	width: 250px;
+	padding-top: 10px;
 	padding-left: 0px;
-	/*border:1px solid green;/*Grid visualization guide. Remove when publish*/
+	height: 100%;
+	padding-top: 5%;
+	/*border-bottom: 2px solid white;*/
 }
 
 .gu1_35 h2{
@@ -181,49 +183,38 @@ ul #nav {
 }
 
 .gu1_75{
-	width:200px;
+	width:250px;
 	padding-top: 3.5%;
-	padding-left: 6%;
+	padding-left: 5%;
 	padding-right: 1%;
-	/*border:1px solid green;/*Grid visualization guide. Remove when publish*/
+	/*border: 1px solid red;/*Grid visualization guide. Remove when publish*/
+	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
 }
 
 .gu1_75 #Shoeimage{
 	width: 100%;
 }
 
-.gu1_75 .content{
-	padding-left: 20px;
-}
-
-.gu2{
-	width:20%;
-	height: 10em;
-	padding-left: 3%;
-	padding-right: 1%;
-	padding-top: 2.5%;
-	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
-}
-
-
 .gu2_75{
 	padding-bottom: 0px;
 	width:430px;
-	height:80px;
+	height:89px;
+	/*border: 1px solid red;/*Grid visualization guide. Remove when publish*/
 	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
 	position:relative;
 }
 
 .gu3_25{
-	width:430px;
+	width:475px;
 	height:35px;
+	/*border: 1px solid red;/*Grid visualization guide. Remove when publish*/
 	/*border:1px solid blue; /*Grid visualization guide. Remove when publish*/
 	position:relative;
 	float:left;
 }
 
 .gu4{
-	width: 40%;
+	width: 55%;
 	padding-top: 10px;
 	padding-left: 5px;
 	text-align: center;
@@ -232,30 +223,32 @@ ul #nav {
 }
 
 .gu4_5{
-	width: 70%;
-	padding-top: 10px;
-	padding-left: 20px;
+	width: 768px;
+	padding-top: 50px;
 	text-align: center;
 	/*border:1px solid blue;/*Grid visualization guide. Remove when publish*/
 	
 }
 
-.gu5{
-	width: 480px;
-	margin-left:0;
-
+.gu5 {
+	width: 630px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-left: 30px;
+	text-align: center;
 }
 
 .gu5_9{
-	width:450px;
+	width:768px;
 	height:62px;
 	padding-left: 0px;
 	margin-left: 0px;
 }
 
 .gu5_9 .Complete{
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 a{
@@ -270,7 +263,7 @@ a:active, a:hover{
 .gu3_25 .content .top_nav {
 	position:absolute;
 	bottom:0px;
-	left:0px;
+	left: 0px;
 	font-size:20px;
 	color:white;
 	/*Allows that padding to render in similar way on all browsers.*/
@@ -284,9 +277,9 @@ a:active, a:hover{
 }
 
 
-.gu2 .content ul li {
+.gu1_75 .content ul li {
 	display: block;
-	font-size:25px;
+	font-size:20px;
 	color:white;
 	text-align: right;
 	margin-bottom:1em; 
@@ -294,12 +287,17 @@ a:active, a:hover{
 	-webkit-padding-start:0;
 }
 
+#HomeImage{
+	width: 100%;
+	
+}
 
 
 #navbar{
-	width:100%;
-	height:43px;
+	width: 100%;
+	height:29px;
 }
+
 
 form fieldset{
 	margin-bottom: 20px;
@@ -403,9 +401,7 @@ form#Review button:hover {
 }
 
 .HomeImage{
-	position:relative;
-	vertical-align: bottom;
-	width: 470px;
+	width: 100%;
 }
 
 .About{
@@ -416,20 +412,4 @@ form#Review button:hover {
 
 .FAQ{
 	width: 100%;
-}
-form#Shipping button{
-	background: url('buttons/button_bk.png');
-	border:none;
-	color: #FFFFFF;
-	display: block;
-	font: Georgia, Times,serif;
-	margin: auto;
-	padding: 7px 25px;
-	text-transform: uppercase;
-}
-
-form#Shipping button:hover {
-	background:url('buttons/button_bk_hover.png')
-	center;
-	cursor: pointer;
 }

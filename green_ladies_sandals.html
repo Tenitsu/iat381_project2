@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type = "text/css" href="shoestore.css"/> <!-- calling on style sheet and tell it that it's css -->
 		<link rel="stylesheet" media="(max-width: 768px)" type="text/css" href="shoestore_tablet.css" /><!--Css for tablet-->
 		<link rel="stylesheet" media="(max-width: 480px)" type="text/css" href="shoestore_mobile.css" /><!--Css for mobile-->
+
 	</head>
 	<body>
 		<!-- Page container-->
@@ -17,7 +18,7 @@
 				<!--Create column for the company logo-->
 				<div class="col gu2_75">
 					<div class="content">
-						<a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/index.html"><img src="Logo.png" alt="Alcor Mizar's Shoe Store"/></a>
+						<a href="#"><img src="Logo.png" alt="Alcor Mizar's Shoe Store"/></a>
 					</div><!--Closes the content tag-->
 				</div><!--Closes the gu2_75 tag-->
 
@@ -40,7 +41,7 @@
 			<div class="row pg-image">
 				<div class="col gu6">
 					<div class="content">
-						<img id="HomeImage" src="HomeP.jpg" alt="Our commitment"/>
+						<img id="HomeImage" src="WomenP.jpg" alt="Our commitment"/>
 					</div><!--Closes the content tag-->
 				</div><!--Closes col gu6 column-->
 			</div>
@@ -51,10 +52,10 @@
 				<!--Area for horizontal navigation-->
 				<div class="row gu6">
 					<div class="content">
-						<img id="navbar" src="buttons/nav_graphic.png" alt=""/>
+						<img id="navbar" src="buttons/nav_graphic.png" alt="" />
 						<ul>
 							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/index.html"><img src="buttons/home.png" onmouseover="this.src='buttons/home_hover.png'" onmouseout="this.src='buttons/home.png'" alt="home"/></a></li>
-							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/women.html"><img src="buttons/Women.png" onmouseover="this.src='buttons/Women_hover.png'" onmouseout="this.src='buttons/Women.png'" alt="Women"/></a></li>
+							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/women.html"><img src="buttons/Women_hover.png" onmouseover="this.src='buttons/Women_hover.png'" onmouseout="this.src='buttons/Women_hover.png'" alt="Women"/></a></li>
 							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/men.html"><img src="buttons/Men.png" onmouseover="this.src='buttons/Men_hover.png'" onmouseout="this.src='buttons/Men.png'" alt="Men"/></a></li>
 							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/girl.html"><img src="buttons/Girls.png" onmouseover="this.src='buttons/Girls_hover.png'" onmouseout="this.src='buttons/Girls.png'" alt="Girls"/></a></li>
 							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/boy.html"><img src="buttons/Boys.png" onmouseover="this.src='buttons/Boys_hover.png'" onmouseout="this.src='buttons/Boys.png'" alt="Boys"/></a></li>
@@ -63,55 +64,82 @@
 					</div>
 				</div>
 
-				<!--Area for the Frequently asked questions-->
+				<!--Area for vertical navigation-->
 				<div class="col gu1_75">
 					<div class="content">
-						<h1>Help - FAQ</h1>
-						<p></p>
-						<section>
-							<h2>1. How do I checkout? </h2>
-							<p>	Answer: Simply add the shoes you want to your cart by clicking on the "add to cart" button located under the shoes and follow the instruction to checkout.</p>
-							<p></p>
-						</section>
-
-						<section>
-							<h2>2. Where do I find the different kinds of shoes? </h2>
-							<p>Answer: Click on the category you want (eg. Women) and all other types of shoes will be listed as a sub menu on the side.</p>
-							<p></p>
-						</section>
-
-						<section>
-							<h2>3. What kind of shipping do you offer?</h2>
-							<p>	Answer: We ship by regular post, registered register post or xpresspost. You are welcome to pick up the shoes at our store as well.</p>
-							<p></p>
-						</section>
-
-						<section>
-							<h2>4. What is your shipping rate?</h2>
-							<p>	Answer: Shipping will be calculated as you checkout. Be assured that you can quit at anytime during the checkout process and we won't charge you.</p>
-							<p></p>
-						</section>
+					<!--<h1>vertical navigation</h1>-->
+							<ul>
+								<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/women.html">New Arrivals</a></li>
+								<li><a href="#">Boots</a></li>
+								<li><a href="#">Dress Shoes</a></li>
+								<li><a href="#">Casual</a></li>
+								<li><a href="#">Sandals</a></li>
+								<li><a href="#">Others</a></li>
+							</ul><!--Closes the UL tag-->
 					</div><!--Closes the content tag-->
-				</div><!--Closes the gu1_75 tag-->
+				</div><!--Closes the gu2 tag-->
 
-				<!--Area for image-->
-				<div class="col gu4">
-						<h2></h2>
-						<h3></h3>
-						<p></p>
-						<img class="FAQ" src="images/FAQ.png" alt="contact_phone" /><!--shoe image-->
-				</div><!--End the gu4 class-->
-			</div><!--Closes the pg-content row-->
+									<!--Column for image-->
+				<div class="col gu1_75">
+					<img id="Shoeimage" src="images/ladies_2.png" alt="Black Sandals" />
+					<p></p>
+					<h2>$30.00</h2>
+					<p></p>
+					<p></p>
+					<a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/cart.html"><img src="images/Add_to_Cart.png" onmouseover="this.src='images/Add_to_Cart_hover.png'" onmouseout="this.src='images/Add_to_Cart.png'" alt="cart"/></a>
+					<!--Create column for product review-->
+				</div><!--Closes gu1_75-->
+              
+                    <!--Column for information-->
+				<div class="col gu1_75">
+					<h1>Green Ladies Sandals</h1>
+					<h2></h2>
+					<p></p>
+					<p></p>
+					<h3>Details</h3>
+					<p>Material: Synthetic</p>
+					<p>Elegant green ladies sandals with small heel. </p>
+					<p></p>
+					<p></p>
+					<h3>Avaliable/In stock sizes :</h3>
+					<p> 6  ||  6(1/2)  ||  7  ||  7(1/2)  ||  8  ||  8(1/2)  || 9  </p>
+					<p>Please note: We will only be asking for your shoe size when you checkout.</p>
 
 
+					<div class="col gu1_35">
+						<h2>Product Review</h2>
+							<article>
+								<section>
+									<p>No reviews yet. Be the first to review this product!</p>
+								</section>
+							</article>
+
+							<!--A place for people to submit their product review-->
+							<form id="Review">
+								<fieldset>
+									<legend>Submit Review</legend>
+									<ol>
+										<li>
+											<label for="review">Your review</label> 
+											<textarea id="review" name="review" rows=5 required></textarea>
+										</li>
+									</ol>
+								</fieldset> <!--Close the button fieldset-->
+
+								<!--Create a button to submit review-->
+								<fieldset>
+									<button type="submit">Submit Review!</button>
+								</fieldset> <!--Close the button fieldset-->
+							</form><!--Closes the form-->
+					</div><!--Closes gu1_35 tag-->
+				</div><!--Closes gu1_75-->
+			</div><!--Closes pg-content-->	
 
 			<!--Create the footer row-->
 			<div class="row pg-footer">
+				<h1></h1>
 				<!--<h1>FOOTER ROW</h1>-->
-				<div class="col gu6">
-				</div><!--Closes the gu6 column-->
 			</div><!--Closes the pg-footer row-->
-
 		</div><!--closes the page gu6 tag-->
 	</body>
 </html>

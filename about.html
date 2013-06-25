@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Alcor Mizars Shoe Store</title> <!--Title-->
 		<link rel="stylesheet" type = "text/css" href="shoestore.css"/> <!-- calling on style sheet and tell it that it's css -->
-		<link rel="stylesheet" media="(max-width: 640px)" type="text/css" href="shoestore_mobile.css" />
+		<link rel="stylesheet" media="(max-width: 768px)" type="text/css" href="shoestore_tablet.css" /><!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 480px)" type="text/css" href="shoestore_mobile.css" /><!--Css for mobile-->
 	</head>
 	<body>
 		<!-- Page container-->
@@ -47,9 +48,10 @@
 
 			<!--Create the content row-->
 			<div class="row pg-content">
+				<!--Create row for horizontal navigation-->
 				<div class="row gu6">
 					<div class="content">
-						<img id="navbar" src="buttons/nav_graphic.png" alt=""/>
+						<img id="navbar" src="buttons/nav_graphic.png" alt="" />
 						<ul>
 							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/index.html"><img src="buttons/home.png" onmouseover="this.src='buttons/home_hover.png'" onmouseout="this.src='buttons/home.png'" alt="home"/></a></li>
 							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/women.html"><img src="buttons/Women.png" onmouseover="this.src='buttons/Women_hover.png'" onmouseout="this.src='buttons/Women.png'" alt="Women"/></a></li>
@@ -61,22 +63,38 @@
 					</div>
 				</div>
 
-				<!--Area where the Updates and Blogging go-->
+				<!--Area where the actual information go-->
 				<div class="col gu1_75">
 					<div class="content">
-					<!--<h1>Where the Updates go</h1>-->
-						<h1>about</h1>
-						<p>Underconstruction</p>
+					<!--<h1>Where the about contents go</h1>-->
+						<section>
+							<h1>About</h1>
+							<p>Thank you for visiting our store. We are a small two people company working hard to bring the best shoes to you. </p>
+							<p></p>
+						</section>
+
+						<section>
+							<h1>History</h1>
+							<p>It all started as an idea between me and my partner. It was always our dream to open a shoe store. After we finally managed to save up enough money to start one, started to consider where we want to open the store. We decided to open it here and serve the local community because of all the kindness we received. We wanted repay the kindness in some way and thus the birth of Alcor Mizar's Shoe Store.</p>
+							<p></p>
+						</section>
+
+						<section>
+							<h1>Our commitment</h1>
+							<p>We wanted to bring the best to the local community and aim to provide only the best. Feel free to contact us. We hope to be of service to you.</p>
+							<h3>Best,</h3>
+							<h3>Store managers</h3>
+						</section>
 					</div><!--Closes the content tag-->
 				</div><!--Closes the gu1_75 tag-->
 
-				<!--Area where the actual items go-->
+				<!--Area where the images go-->
 				<div class="col gu4">
 						<h2></h2>
 						<h3></h3>
 						<p></p>
-						<a href="#"><img src="Contact-Us_Phone.jpg" alt="contact_phone" width="105%" /></a> <!--phone image-->
-						<a href="#"><img src="Contact-Us_Email.jpg" alt="contact_email" width="105%"/></a> <!--email image-->
+						<img class="About" src="images/Explanation.jpg" alt="contact_phone"/><!--shoe image-->
+						<img class="About" src="images/explain_2.jpg" alt="contact_phone"/><!--shoe image-->
 				</div><!--End the gu4 class-->
 			</div><!--Closes the pg-content row-->
 

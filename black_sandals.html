@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Alcor Mizars Shoe Store</title> <!--Title-->
 		<link rel="stylesheet" type = "text/css" href="shoestore.css"/> <!-- calling on style sheet and tell it that it's css -->
-		<link rel="stylesheet" media="(max-width: 640px)" type="text/css" href="shoestore_mobile.css" />
+		<link rel="stylesheet" media="(max-width: 768px)" type="text/css" href="shoestore_tablet.css" /><!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 480px)" type="text/css" href="shoestore_mobile.css" /><!--Css for mobile-->
 
 	</head>
 	<body>
@@ -48,9 +49,10 @@
 
 			<!--Create the content row-->
 			<div class="row pg-content">
+				<!--Area for horizontal navigation-->
 				<div class="row gu6">
 					<div class="content">
-						<img id="navbar" src="buttons/nav_graphic.png" alt="" width="100%" />
+						<img id="navbar" src="buttons/nav_graphic.png" alt="" />
 						<ul>
 							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/index.html"><img src="buttons/home.png" onmouseover="this.src='buttons/home_hover.png'" onmouseout="this.src='buttons/home.png'" alt="home"/></a></li>
 							<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/women.html"><img src="buttons/Women_hover.png" onmouseover="this.src='buttons/Women_hover.png'" onmouseout="this.src='buttons/Women_hover.png'" alt="Women"/></a></li>
@@ -62,10 +64,10 @@
 					</div>
 				</div>
 
-				<!--Area where the Updates and Blogging go-->
+				<!--Area for vertical navigation-->
 				<div class="col gu1_75">
 					<div class="content">
-					<!--<h1>Where the Updates go</h1>-->
+					<!--<h1>vertical navigation</h1>-->
 							<ul>
 								<li><a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/women.html">New Arrivals</a></li>
 								<li><a href="#">Boots</a></li>
@@ -79,31 +81,67 @@
 
 				<!--Area where the actual items go-->
 					<!--Column for image-->
-					<div class="col gu1_75">
-					<img src="images/Black_Sandals.png" alt="Black Sandals" width="100%" />
-					</div><!--Closes gu2-->
+				<div class="col gu1_75">
+					<img id="Shoeimage" src="images/Black_Sandals.png" alt="Black Sandals" />
+					<p></p>
+					<h2>$45.00</h2>
+					<p></p>
+					<p></p>
+					<a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/cart.html"><img src="images/Add_to_Cart.png" onmouseover="this.src='images/Add_to_Cart_hover.png'" onmouseout="this.src='images/Add_to_Cart.png'" alt="cart"/></a>
+					<!--Create column for product review-->
+				</div><!--Closes gu2-->
               
                     <!--Column for information-->
-					<div class="col gu1_75">
+				<div class="col gu1_75">
 					<h1>Black Sandals</h1>
 					<h2></h2>
 					<p></p>
 					<p></p>
 					<h3>Details</h3>
-					<p><b>Material:</b> Synthetic</p>
+					<p>Material: Synthetic</p>
 					<p>Beautiful ladies black sandals with 5 straps and unique design. Perfect for casual occasions.</p>
 					<p></p>
 					<p></p>
 					<h3>Avaliable/In stock sizes :</h3>
 					<p> 6  ||  6(1/2)  ||  7  ||  7(1/2)  ||  8  ||  8(1/2)  || 9  </p>
 					<p>Please note: We will only be asking for your shoe size when you checkout.</p>
-					<a href="http://www.sfu.ca/~hwa47/iat381/project02_alt/cart.html"><img src="images/Add_to_Cart.png" onmouseover="this.src='images/Add_to_Cart_hover.png'" onmouseout="this.src='images/Add_to_Cart.png'" alt="cart"/></a>
-					</div><!--Closes gu2-->					
+
+
+					<div class="col gu1_35">
+						<h2>Product Review</h2>
+							<article>
+								<section>
+									<p>Review 1: Looks nice and comfortable to wear.</p>
+									<p>Review 2: Gets a little uncomfortable after a while but ok overall.</p>
+								</section>
+							</article>
+
+							<!--A place for people to submit their product review-->
+							<form id="Review">
+								<fieldset>
+									<legend>Submit Review</legend>
+									<ol>
+										<li>
+											<label for="review">Your review</label> 
+											<textarea id="review" name="review" rows=5 required></textarea>
+										</li>
+									</ol>
+								</fieldset> <!--Close the button fieldset-->
+
+								<!--Create a button to submit review-->
+								<fieldset>
+									<button type="submit">Submit Review!</button>
+								</fieldset> <!--Close the button fieldset-->
+							</form><!--Closes the form-->
+					</div><!--Closes gu1_35 tag-->
+				</div><!--Closes gu1_75-->
+			</div><!--Closes pg-content-->	
+
 			<!--Create the footer row-->
 			<div class="row pg-footer">
+				<h1></h1>
 				<!--<h1>FOOTER ROW</h1>-->
 			</div><!--Closes the pg-footer row-->
-
 		</div><!--closes the page gu6 tag-->
 	</body>
 </html>

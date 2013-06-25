@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Alcor Mizars Shoe Store</title> <!--Title-->
 		<link rel="stylesheet" type = "text/css" href="shoestore.css"/> <!-- calling on style sheet and tell it that it's css -->
-		<link rel="stylesheet" media="(max-width: 640px)" type="text/css" href="shoestore_mobile.css" />
+		<link rel="stylesheet" media="(max-width: 768px)" type="text/css" href="shoestore_tablet.css" /><!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 480px)" type="text/css" href="shoestore_mobile.css" /><!--Css for mobile-->
 
 	</head>
 	<body>
@@ -48,6 +49,7 @@
 
 			<!--Create the content row-->
 			<div class="row pg-content">
+				<!--Area for horizontal navigation-->
 				<div class="row gu6">
 					<div class="content">
 						<img id="navbar" src="buttons/nav_graphic.png" alt=""/>
@@ -62,10 +64,10 @@
 					</div>
 				</div>
 
-				<!--Area where the Updates and Blogging go-->
+				<!--Area for vertical navigation-->
 				<div class="col gu1_75">
 					<div class="content">
-					<!--<h1>Where the Updates go</h1>-->
+					<!--<h1>vertical navigation</h1>-->
 							<ul>
 								<li><img src="buttons/all.png" alt="All Shoes"/></li>
 								<li><a href="#">Women</a></li>
@@ -102,6 +104,7 @@
 							<p></p>
 						</div>
 
+						<!--Column1 Second item-->
 						<div class="col gu1">
 							<!--<h1>This us where the image go</h1>-->
 							<a href="#"><img src="images/boys_4.png" onmouseover="this.src='images/boys_4_hover.png'" onmouseout="this.src='images/boys_4.png'" alt="boys_4"/></a>
